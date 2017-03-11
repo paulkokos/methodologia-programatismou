@@ -5,6 +5,7 @@
  */
 package CalculatorForm;
 
+
 /**
  *
  * @author paulkokos
@@ -16,6 +17,7 @@ public class CalculatorForm extends javax.swing.JFrame {
      */
     public CalculatorForm() {
         initComponents();
+        MathFractions math ;
     }
 
     /**
@@ -134,6 +136,11 @@ public class CalculatorForm extends javax.swing.JFrame {
 
         jButton11.setFont(new java.awt.Font("Dialog", 1, 19)); // NOI18N
         jButton11.setText("=");
+        jButton11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton11MouseClicked(evt);
+            }
+        });
 
         jButton12.setFont(new java.awt.Font("Dialog", 1, 20)); // NOI18N
         jButton12.setText("/");
@@ -146,6 +153,11 @@ public class CalculatorForm extends javax.swing.JFrame {
 
         jButton15.setFont(new java.awt.Font("Dialog", 1, 20)); // NOI18N
         jButton15.setText("+");
+        jButton15.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton15MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -245,6 +257,7 @@ public class CalculatorForm extends javax.swing.JFrame {
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
         // TODO add your handling code here:
+        
         jTextField1.setText(jTextField1.getText()+jButton1.getText());
     }//GEN-LAST:event_jButton1MouseClicked
 
@@ -292,6 +305,19 @@ public class CalculatorForm extends javax.swing.JFrame {
         // TODO add your handling code here:
         jTextField1.setText(jTextField1.getText()+jButton10.getText());
     }//GEN-LAST:event_jButton10MouseClicked
+
+    private void jButton15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton15MouseClicked
+        // TODO add your handling code here:
+        MathFractions math = new MathFractions();
+        math.add(Double.parseDouble(jTextField1.getText()));
+        
+    }//GEN-LAST:event_jButton15MouseClicked
+
+    private void jButton11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton11MouseClicked
+        // TODO add your handling code here:
+        MathFractions math = new MathFractions();
+        jTextField1.setText(Double.toString(math.equality()));
+    }//GEN-LAST:event_jButton11MouseClicked
 
     /**
      * @param args the command line arguments
