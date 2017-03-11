@@ -12,7 +12,7 @@ package CalculatorForm;
 public class MathFractions {
     double num1;
     double num2;
-    private double sum=0;
+    private static double sum=0;
     public double add(double number1){
         sum = sum+ number1;
         return sum;
@@ -31,6 +31,9 @@ public class MathFractions {
     }
     public double equality (){
         return sum;
+    }
+    public void clear() {
+        sum=0;
     }
 //    public boolean isNumeric(String str) {
 //    try {
