@@ -50,14 +50,30 @@ public class CalculatorForm extends javax.swing.JFrame {
 
         jButton1.setFont(new java.awt.Font("Dialog", 1, 20)); // NOI18N
         jButton1.setText("1");
+        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton1MouseClicked(evt);
+            }
+        });
 
         jButton2.setFont(new java.awt.Font("Dialog", 1, 20)); // NOI18N
         jButton2.setText("2");
+        jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton2MouseClicked(evt);
+            }
+        });
 
         jButton3.setFont(new java.awt.Font("Dialog", 1, 20)); // NOI18N
         jButton3.setText("3");
+        jButton3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton3MouseClicked(evt);
+            }
+        });
 
-        jTextField1.setText("jTextField1");
+        jTextField1.setFont(new java.awt.Font("Dialog", 1, 20)); // NOI18N
+        jTextField1.setText("0");
 
         jButton4.setFont(new java.awt.Font("Dialog", 1, 20)); // NOI18N
         jButton4.setText("4");
@@ -166,7 +182,7 @@ public class CalculatorForm extends javax.swing.JFrame {
                     .addComponent(jButton10)
                     .addComponent(jButton11)
                     .addComponent(jButton15))
-                .addContainerGap(115, Short.MAX_VALUE))
+                .addContainerGap(105, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -190,6 +206,24 @@ public class CalculatorForm extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+        // TODO add your handling code here:
+        int num=1;
+        jTextField1.setText(jTextField1.getText() + num);
+    }//GEN-LAST:event_jButton1MouseClicked
+
+    private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
+        // TODO add your handling code here:
+        int num=2;
+        jTextField1.setText(jTextField1.getText() + num);
+    }//GEN-LAST:event_jButton2MouseClicked
+
+    private void jButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseClicked
+        // TODO add your handling code here:
+        int num=3;
+        jTextField1.setText(jTextField1.getText() + num);
+    }//GEN-LAST:event_jButton3MouseClicked
 
     /**
      * @param args the command line arguments
