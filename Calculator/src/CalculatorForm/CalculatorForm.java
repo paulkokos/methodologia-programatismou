@@ -15,9 +15,10 @@ public class CalculatorForm extends javax.swing.JFrame {
     /**
      * Creates new form CalculatorForm
      */
+    private final MathFractions math = new MathFractions();
     public CalculatorForm() {
+        
         initComponents();
-        MathFractions math ;
     }
 
     /**
@@ -76,6 +77,7 @@ public class CalculatorForm extends javax.swing.JFrame {
 
         jTextField1.setEditable(false);
         jTextField1.setFont(new java.awt.Font("Dialog", 1, 20)); // NOI18N
+        jTextField1.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         jTextField1.setText("0");
 
         jButton4.setFont(new java.awt.Font("Dialog", 1, 20)); // NOI18N
@@ -254,7 +256,7 @@ public class CalculatorForm extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
         // TODO add your handling code here:
         
@@ -308,15 +310,16 @@ public class CalculatorForm extends javax.swing.JFrame {
 
     private void jButton15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton15MouseClicked
         // TODO add your handling code here:
-        MathFractions math = new MathFractions();
-        math.add(Double.parseDouble(jTextField1.getText()));
         
+        math.add(Double.parseDouble(jTextField1.getText()));
+        jTextField1.setText("");
     }//GEN-LAST:event_jButton15MouseClicked
 
     private void jButton11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton11MouseClicked
-        // TODO add your handling code here:
-        MathFractions math = new MathFractions();
-        jTextField1.setText(Double.toString(math.equality()));
+        // TODO Δεν περναει σωστα την πραξη. Υπολογιζει μονο την προηγουμενη καταχωρηση
+        double temp = Double.parseDouble(jTextField1.getText());
+        String tempstring = Double.toString(math.equality());
+        jTextField1.setText(tempstring);
     }//GEN-LAST:event_jButton11MouseClicked
 
     /**

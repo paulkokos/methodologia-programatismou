@@ -10,25 +10,36 @@ package CalculatorForm;
  * @author root
  */
 public class MathFractions {
+    double num1;
+    double num2;
     private double sum=0;
     public double add(double number1){
-        sum += number1;
+        sum = sum+ number1;
         return sum;
     }
     public double abstraction(double number){
-        sum -= number;
+        sum = sum - number;
         return sum;
     }
     public double multiply( double number) {
-        sum *= number;
+        sum = sum * number;
         return sum;
     }
     public double division (double number){
-        sum /= number;
+        sum = sum / number;
         return sum;
     }
     public double equality (){
         return sum;
     }
+//    public boolean isNumeric(String str) {
+//    try {
+//        double d = Double.parseDouble(str);
+//    }
+//    catch(NumberFormatException nfe){
+//        return false;
+//    }
+//        return true;
+//    }
     
 }
