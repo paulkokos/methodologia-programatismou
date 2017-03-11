@@ -72,29 +72,65 @@ public class CalculatorForm extends javax.swing.JFrame {
             }
         });
 
+        jTextField1.setEditable(false);
         jTextField1.setFont(new java.awt.Font("Dialog", 1, 20)); // NOI18N
         jTextField1.setText("0");
 
         jButton4.setFont(new java.awt.Font("Dialog", 1, 20)); // NOI18N
         jButton4.setText("4");
+        jButton4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton4MouseClicked(evt);
+            }
+        });
 
         jButton5.setFont(new java.awt.Font("Dialog", 1, 20)); // NOI18N
         jButton5.setText("5");
+        jButton5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton5MouseClicked(evt);
+            }
+        });
 
         jButton6.setFont(new java.awt.Font("Dialog", 1, 20)); // NOI18N
         jButton6.setText("6");
+        jButton6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton6MouseClicked(evt);
+            }
+        });
 
         jButton7.setFont(new java.awt.Font("Dialog", 1, 20)); // NOI18N
         jButton7.setText("7");
+        jButton7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton7MouseClicked(evt);
+            }
+        });
 
         jButton8.setFont(new java.awt.Font("Dialog", 1, 20)); // NOI18N
         jButton8.setText("8");
+        jButton8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton8MouseClicked(evt);
+            }
+        });
 
         jButton9.setFont(new java.awt.Font("Dialog", 1, 20)); // NOI18N
         jButton9.setText("9");
+        jButton9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton9MouseClicked(evt);
+            }
+        });
 
         jButton10.setFont(new java.awt.Font("Dialog", 1, 20)); // NOI18N
         jButton10.setText("0");
+        jButton10.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton10MouseClicked(evt);
+            }
+        });
 
         jButton11.setFont(new java.awt.Font("Dialog", 1, 19)); // NOI18N
         jButton11.setText("=");
@@ -209,21 +245,53 @@ public class CalculatorForm extends javax.swing.JFrame {
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
         // TODO add your handling code here:
-        int num=1;
-        jTextField1.setText(jTextField1.getText() + num);
+        jTextField1.setText(jTextField1.getText()+jButton1.getText());
     }//GEN-LAST:event_jButton1MouseClicked
 
     private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
         // TODO add your handling code here:
-        int num=2;
-        jTextField1.setText(jTextField1.getText() + num);
+        jTextField1.setText(jTextField1.getText()+jButton2.getText());
     }//GEN-LAST:event_jButton2MouseClicked
 
     private void jButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseClicked
         // TODO add your handling code here:
-        int num=3;
-        jTextField1.setText(jTextField1.getText() + num);
+        jTextField1.setText(jTextField1.getText()+jButton3.getText());
     }//GEN-LAST:event_jButton3MouseClicked
+
+    private void jButton4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton4MouseClicked
+        // TODO add your handling code here:
+        jTextField1.setText(jTextField1.getText()+jButton4.getText());
+    }//GEN-LAST:event_jButton4MouseClicked
+
+    private void jButton5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton5MouseClicked
+        // TODO add your handling code here:
+        jTextField1.setText(jTextField1.getText()+jButton5.getText());
+    }//GEN-LAST:event_jButton5MouseClicked
+
+    private void jButton6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton6MouseClicked
+        // TODO add your handling code here:
+        jTextField1.setText(jTextField1.getText()+jButton6.getText());
+    }//GEN-LAST:event_jButton6MouseClicked
+
+    private void jButton7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton7MouseClicked
+        // TODO add your handling code here:
+        jTextField1.setText(jTextField1.getText()+jButton7.getText());
+    }//GEN-LAST:event_jButton7MouseClicked
+
+    private void jButton8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton8MouseClicked
+        // TODO add your handling code here:
+        jTextField1.setText(jTextField1.getText()+jButton8.getText());
+    }//GEN-LAST:event_jButton8MouseClicked
+
+    private void jButton9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton9MouseClicked
+        // TODO add your handling code here:
+        jTextField1.setText(jTextField1.getText()+jButton9.getText());
+    }//GEN-LAST:event_jButton9MouseClicked
+
+    private void jButton10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton10MouseClicked
+        // TODO add your handling code here:
+        jTextField1.setText(jTextField1.getText()+jButton10.getText());
+    }//GEN-LAST:event_jButton10MouseClicked
 
     /**
      * @param args the command line arguments
