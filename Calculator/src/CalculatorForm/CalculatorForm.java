@@ -42,12 +42,12 @@ public class CalculatorForm extends javax.swing.JFrame {
         jButton8 = new javax.swing.JButton();
         jButton9 = new javax.swing.JButton();
         jButton10 = new javax.swing.JButton();
-        jButton11 = new javax.swing.JButton();
-        jButton12 = new javax.swing.JButton();
-        jButton13 = new javax.swing.JButton();
-        jButton14 = new javax.swing.JButton();
-        jButton15 = new javax.swing.JButton();
-        jButton16 = new javax.swing.JButton();
+        equals = new javax.swing.JButton();
+        divide = new javax.swing.JButton();
+        multiply = new javax.swing.JButton();
+        minus = new javax.swing.JButton();
+        plus = new javax.swing.JButton();
+        clear = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Το κομπιουτερακι μου σε Java");
@@ -137,35 +137,50 @@ public class CalculatorForm extends javax.swing.JFrame {
             }
         });
 
-        jButton11.setFont(new java.awt.Font("Dialog", 1, 19)); // NOI18N
-        jButton11.setText("=");
-        jButton11.addMouseListener(new java.awt.event.MouseAdapter() {
+        equals.setFont(new java.awt.Font("Dialog", 1, 19)); // NOI18N
+        equals.setText("=");
+        equals.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton11MouseClicked(evt);
+                equalsMouseClicked(evt);
             }
         });
 
-        jButton12.setFont(new java.awt.Font("Dialog", 1, 20)); // NOI18N
-        jButton12.setText("/");
-
-        jButton13.setFont(new java.awt.Font("Dialog", 1, 20)); // NOI18N
-        jButton13.setText("*");
-
-        jButton14.setFont(new java.awt.Font("Dialog", 1, 20)); // NOI18N
-        jButton14.setText("-");
-
-        jButton15.setFont(new java.awt.Font("Dialog", 1, 20)); // NOI18N
-        jButton15.setText("+");
-        jButton15.addMouseListener(new java.awt.event.MouseAdapter() {
+        divide.setFont(new java.awt.Font("Dialog", 1, 20)); // NOI18N
+        divide.setText("/");
+        divide.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton15MouseClicked(evt);
+                divideMouseClicked(evt);
             }
         });
 
-        jButton16.setText("<html>C<br>L<br>E<br>A<br>R</html>");
-        jButton16.addMouseListener(new java.awt.event.MouseAdapter() {
+        multiply.setFont(new java.awt.Font("Dialog", 1, 20)); // NOI18N
+        multiply.setText("*");
+        multiply.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton16MouseClicked(evt);
+                multiplyMouseClicked(evt);
+            }
+        });
+
+        minus.setFont(new java.awt.Font("Dialog", 1, 20)); // NOI18N
+        minus.setText("-");
+        minus.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                minusMouseClicked(evt);
+            }
+        });
+
+        plus.setFont(new java.awt.Font("Dialog", 1, 20)); // NOI18N
+        plus.setText("+");
+        plus.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                plusMouseClicked(evt);
+            }
+        });
+
+        clear.setText("<html>C<br>L<br>E<br>A<br>R</html>");
+        clear.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                clearMouseClicked(evt);
             }
         });
 
@@ -186,7 +201,7 @@ public class CalculatorForm extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(jButton6)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(multiply, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jButton7)
                         .addGap(18, 18, 18)
@@ -194,7 +209,7 @@ public class CalculatorForm extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(jButton9)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(divide, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -205,13 +220,13 @@ public class CalculatorForm extends javax.swing.JFrame {
                                 .addComponent(jButton2)
                                 .addGap(18, 18, 18)
                                 .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addComponent(jButton11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(equals, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jButton14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton15, javax.swing.GroupLayout.DEFAULT_SIZE, 54, Short.MAX_VALUE))))
+                            .addComponent(minus, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(plus, javax.swing.GroupLayout.DEFAULT_SIZE, 54, Short.MAX_VALUE))))
                 .addGap(18, 18, 18)
-                .addComponent(jButton16, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(clear, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(45, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -226,25 +241,25 @@ public class CalculatorForm extends javax.swing.JFrame {
                             .addComponent(jButton7)
                             .addComponent(jButton8)
                             .addComponent(jButton9)
-                            .addComponent(jButton12))
+                            .addComponent(divide))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jButton4)
                             .addComponent(jButton5)
                             .addComponent(jButton6)
-                            .addComponent(jButton13))
+                            .addComponent(multiply))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jButton1)
                             .addComponent(jButton2)
                             .addComponent(jButton3)
-                            .addComponent(jButton14))
+                            .addComponent(minus))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jButton10)
-                            .addComponent(jButton11)
-                            .addComponent(jButton15)))
-                    .addComponent(jButton16, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(equals)
+                            .addComponent(plus)))
+                    .addComponent(clear, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(90, Short.MAX_VALUE))
         );
 
@@ -376,24 +391,59 @@ public class CalculatorForm extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jButton10MouseClicked
 
-    private void jButton15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton15MouseClicked
+    private void plusMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_plusMouseClicked
         // TODO add your handling code here:
-        
-        math.add(Double.parseDouble(jTextField1.getText()));
+        math.setNum1(Double.parseDouble(jTextField1.getText()));
+        //math.tempFraction=1;
+        math.setFraction(1);
         jTextField1.setText("");
-    }//GEN-LAST:event_jButton15MouseClicked
+    }//GEN-LAST:event_plusMouseClicked
 
-    private void jButton11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton11MouseClicked
+    private void equalsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_equalsMouseClicked
         // TODO Δεν περναει σωστα την πραξη. Υπολογιζει μονο την προηγουμενη καταχωρηση
-        double temp = Double.parseDouble(jTextField1.getText());
-        String tempstring = Double.toString(math.equality());
-        jTextField1.setText(tempstring);
-    }//GEN-LAST:event_jButton11MouseClicked
+        //double temp = Double.parseDouble(jTextField1.getText());
+        //String tempstring = Double.toString(temp);
+        //jTextField1.setText(tempstring);
+        math.setNum2(Double.parseDouble(jTextField1.getText()));
+        switch (math.getFraction()){
+            case 1: math.add();
+            break;
+            case 2: math.abstraction();
+            break;
+            case 3: math.multiply();
+            break;
+            case 4: math.division();
+            break;
+            default: break;
+        }
+            jTextField1.setText(Double.toString(math.getSum()));
+    }//GEN-LAST:event_equalsMouseClicked
 
-    private void jButton16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton16MouseClicked
+    private void clearMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_clearMouseClicked
         // TODO add your handling code here:
         jTextField1.setText("0");
-    }//GEN-LAST:event_jButton16MouseClicked
+    }//GEN-LAST:event_clearMouseClicked
+
+    private void minusMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_minusMouseClicked
+       // TODO add your handling code here:
+         math.setNum1(Double.parseDouble(jTextField1.getText()));
+        jTextField1.setText("");
+         math.setFraction(2);
+    }//GEN-LAST:event_minusMouseClicked
+
+    private void multiplyMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_multiplyMouseClicked
+        // TODO add your handling code here:
+        math.setNum1(Double.parseDouble(jTextField1.getText()));
+        jTextField1.setText("");
+         math.setFraction(3);
+    }//GEN-LAST:event_multiplyMouseClicked
+
+    private void divideMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_divideMouseClicked
+        // TODO add your handling code here:
+        math.setNum1(Double.parseDouble(jTextField1.getText()));
+        jTextField1.setText("");
+         math.setFraction(4);
+    }//GEN-LAST:event_divideMouseClicked
 
     /**
      * @param args the command line arguments
@@ -431,14 +481,11 @@ public class CalculatorForm extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton clear;
+    private javax.swing.JButton divide;
+    private javax.swing.JButton equals;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton12;
-    private javax.swing.JButton jButton13;
-    private javax.swing.JButton jButton14;
-    private javax.swing.JButton jButton15;
-    private javax.swing.JButton jButton16;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
@@ -449,5 +496,8 @@ public class CalculatorForm extends javax.swing.JFrame {
     private javax.swing.JButton jButton9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField jTextField1;
+    private javax.swing.JButton minus;
+    private javax.swing.JButton multiply;
+    private javax.swing.JButton plus;
     // End of variables declaration//GEN-END:variables
 }
