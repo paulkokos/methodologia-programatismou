@@ -320,19 +320,20 @@ public class CalculatorForm extends javax.swing.JFrame {
     
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
         // TODO add your handling code here:
-        if ("0".equals(calculationScreen.getText())){
-            calculationScreen.setText("");
-            calculationScreen.setText(calculationScreen.getText()+jButton1.getText());
+        if ("0".equals(calculationScreen.getText()) && jButton1.getText().length() == 1){
+            //calculationScreen.setText("");
+            calculationScreen.setText(jButton1.getText());
         } else {
             calculationScreen.setText(calculationScreen.getText()+jButton1.getText());
+            
         }
     }//GEN-LAST:event_jButton1MouseClicked
 
     private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
         // TODO add your handling code here:
-        if ("0".equals(calculationScreen.getText())){
-            calculationScreen.setText("");
-            calculationScreen.setText(calculationScreen.getText()+jButton2.getText());
+        if ("0".equals(calculationScreen.getText()) && jButton2.getText().length() == 1){
+            //calculationScreen.setText("");
+            calculationScreen.setText(jButton2.getText());
         }
         else {
             calculationScreen.setText(calculationScreen.getText()+jButton2.getText());
@@ -341,9 +342,9 @@ public class CalculatorForm extends javax.swing.JFrame {
 
     private void jButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseClicked
         // TODO add your handling code here:
-        if ("0".equals(calculationScreen.getText())){
-            calculationScreen.setText("");
-            calculationScreen.setText(calculationScreen.getText()+jButton3.getText());
+        if ("0".equals(calculationScreen.getText()) && jButton3.getText().length() == 1){
+            //calculationScreen.setText("");
+            calculationScreen.setText(jButton3.getText());
         }
         else {
             calculationScreen.setText(calculationScreen.getText()+jButton3.getText());
@@ -352,9 +353,9 @@ public class CalculatorForm extends javax.swing.JFrame {
 
     private void jButton4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton4MouseClicked
         // TODO add your handling code here:
-        if ("0".equals(calculationScreen.getText())){
-            calculationScreen.setText("");
-            calculationScreen.setText(calculationScreen.getText()+jButton4.getText());
+        if ("0".equals(calculationScreen.getText()) && jButton4.getText().length() == 1){
+            //calculationScreen.setText("");
+            calculationScreen.setText(jButton4.getText());
         }
         else {
             calculationScreen.setText(calculationScreen.getText()+jButton4.getText());
@@ -363,9 +364,9 @@ public class CalculatorForm extends javax.swing.JFrame {
 
     private void jButton5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton5MouseClicked
         // TODO add your handling code here:
-        if ("0".equals(calculationScreen.getText())){
-            calculationScreen.setText("");
-            calculationScreen.setText(calculationScreen.getText()+jButton5.getText());
+        if ("0".equals(calculationScreen.getText()) && jButton5.getText().length() == 1){
+            //calculationScreen.setText("");
+            calculationScreen.setText(jButton5.getText());
         }
         else {
             calculationScreen.setText(calculationScreen.getText()+jButton5.getText());
@@ -374,9 +375,9 @@ public class CalculatorForm extends javax.swing.JFrame {
 
     private void jButton6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton6MouseClicked
         // TODO add your handling code here:
-        if ("0".equals(calculationScreen.getText())){
-            calculationScreen.setText("");
-            calculationScreen.setText(calculationScreen.getText()+jButton6.getText());
+        if ("0".equals(calculationScreen.getText()) && jButton6.getText().length() == 1){
+            //calculationScreen.setText("");
+            calculationScreen.setText(jButton6.getText());
         }
         else {
             calculationScreen.setText(calculationScreen.getText()+jButton6.getText());
@@ -385,9 +386,9 @@ public class CalculatorForm extends javax.swing.JFrame {
 
     private void jButton7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton7MouseClicked
         // TODO add your handling code here:
-        if ("0".equals(calculationScreen.getText())){
-            calculationScreen.setText("");
-            calculationScreen.setText(calculationScreen.getText()+jButton7.getText());}
+        if ("0".equals(calculationScreen.getText()) && jButton7.getText().length() == 1){
+            //calculationScreen.setText("");
+            calculationScreen.setText(jButton7.getText());}
         else {
             calculationScreen.setText(calculationScreen.getText()+jButton7.getText());
         }
@@ -395,9 +396,9 @@ public class CalculatorForm extends javax.swing.JFrame {
 
     private void jButton8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton8MouseClicked
         // TODO add your handling code here:
-        if ("0".equals(calculationScreen.getText())){
-            calculationScreen.setText("");
-            calculationScreen.setText(calculationScreen.getText()+jButton8.getText());
+        if ("0".equals(calculationScreen.getText()) && jButton8.getText().length() == 1){
+            //calculationScreen.setText("");
+            calculationScreen.setText(jButton8.getText());
         } else {
             calculationScreen.setText(calculationScreen.getText()+jButton8.getText());
         }
@@ -405,9 +406,9 @@ public class CalculatorForm extends javax.swing.JFrame {
 
     private void jButton9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton9MouseClicked
         // TODO add your handling code here:
-        if ("0".equals(calculationScreen.getText())){
-            calculationScreen.setText("");
-            calculationScreen.setText(calculationScreen.getText()+jButton9.getText());
+        if ("0".equals(calculationScreen.getText()) && jButton9.getText().length() == 1){
+            //calculationScreen.setText("");
+            calculationScreen.setText(jButton9.getText());
         } else {
             calculationScreen.setText(calculationScreen.getText()+jButton9.getText());
         }
@@ -415,9 +416,9 @@ public class CalculatorForm extends javax.swing.JFrame {
 
     private void jButton0MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton0MouseClicked
         // TODO add your handling code here:
-        if ("0".equals(calculationScreen.getText())){
-            calculationScreen.setText("");
-            calculationScreen.setText(calculationScreen.getText()+jButton0.getText());
+        if ("0".equals(calculationScreen.getText()) && jButton0.getText().length() == 1){
+            //calculationScreen.setText("");
+            calculationScreen.setText(jButton0.getText());
         }
         else {
             calculationScreen.setText(calculationScreen.getText()+jButton0.getText());
@@ -487,7 +488,7 @@ public class CalculatorForm extends javax.swing.JFrame {
         
         calculationScreen.setText(String.valueOf(math.arnitiko(Double.parseDouble(String.valueOf(calculationScreen.getText())))));
     }//GEN-LAST:event_arnitikoMouseClicked
-
+ 
     /**
      * @param args the command line arguments
      */

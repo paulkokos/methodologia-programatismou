@@ -26,10 +26,10 @@ public class MathFractions {
         trigger1 = false;
     }
     //Προσθεση της προτως τιμης με την δευτερη
-    public void add(){
+    public double add(){
         sum = num1+ num2;
         
-        //return sum;
+        return sum;
     }
     //Αφαιρεση της πρωτης τιμης με την δευτερη
     public double abstraction(){
@@ -58,7 +58,7 @@ public class MathFractions {
     }
     //αποθηκευση αποτελεσματος στην sum
     public void setSum(double num){
-        sum = num;
+        sum = sum +num;
     }
     //Επιστροφη αποτελεσματος της sum
     public double getSum (){
